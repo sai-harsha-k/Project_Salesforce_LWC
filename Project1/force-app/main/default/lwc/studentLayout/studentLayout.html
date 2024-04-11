@@ -1,0 +1,32 @@
+<template>
+    <c-student-modal></c-student-modal>
+    <lightning-layout>
+        <lightning-layout-item size="2">
+            <c-student-navigation onnavigation={handleNavigation}></c-student-navigation>
+        </lightning-layout-item>
+        <template if:true={browserSelected}>
+        <lightning-layout-item size="6">
+            <c-student-browser></c-student-browser>
+        </lightning-layout-item>
+        <lightning-layout-item size="4">
+            <c-student-details></c-student-details>
+        </lightning-layout-item>
+        </template>
+        <template if:true={calculatorSelected}>
+            <lightning-layout-item size="10">
+                <c-calculator-comp></c-calculator-comp>
+            </lightning-layout-item>
+        </template>
+        <template if:true={oppv3Selected}>
+            <lightning-layout-item size="10">
+                <c-opportunity-comp-lwc-v3></c-opportunity-comp-lwc-v3>
+            </lightning-layout-item>
+        </template>
+        <template if:true={oppv4Selected}>
+            <lightning-layout-item size="10">
+                <c-opportunity-comp-lwc-v4></c-opportunity-comp-lwc-v4>
+            </lightning-layout-item>
+        </template>
+
+    </lightning-layout>
+</template>

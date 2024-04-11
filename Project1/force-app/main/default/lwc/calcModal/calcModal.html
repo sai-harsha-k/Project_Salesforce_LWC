@@ -1,0 +1,36 @@
+<template>
+    <div class="slds-modal 
+        slds-fade-in-open 
+        slds-backdrop">
+        <div class="slds-modal__container">
+            <div class="slds-modal__header">
+                Simple Calculator
+                <lightning-button-icon icon-name="utility:close"
+                                        alternative-text="Close this window"
+                                        size="Large"
+                                        class="slds-modal__close"
+                                        onclick={closeModal}
+                                        >
+
+                </lightning-button-icon>
+            </div>
+            <div class="slds-modal__content">
+                <div class="slds-box">
+                    <lightning-input label="First number" onchange={handleFirstNumberChange} value={firstNumber}></lightning-input>
+                    <br/>
+                    <lightning-input label="Second number" onchange={handleSecondNumberChange} value={secondNumber}></lightning-input>
+                </div>
+                <div class="slds-box">
+                    Result is  {result}
+                </div>
+            </div>
+            <div class="slds-modal__footer">
+                <lightning-button label="Addition" onclick={add}></lightning-button>
+                <lightning-button label="Subtraction" onclick={sub}></lightning-button>
+                <lightning-button label="Multiplication" onclick={mult}></lightning-button>
+                <lightning-button label="division" onclick={div}></lightning-button>
+            </div>
+
+        </div>
+    </div>
+</template>

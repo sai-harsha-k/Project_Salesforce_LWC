@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="CallBack vs Arrow function">
+        <div slot="actions">
+        <lightning-button label="Start CB" onclick={updateDateTime}>
+        </lightning-button>
+        <lightning-button label="Start Arrow" onclick={updateDateTimeUsingArrow}>
+        </lightning-button>
+        <lightning-button label="stop" onclick={stop}>
+        </lightning-button>
+        </div>      
+        Today's Date and time :{todaysDateTime}
+    </lightning-card>
+</template>

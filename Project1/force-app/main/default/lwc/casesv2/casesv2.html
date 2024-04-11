@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Cases - To a function">
+    <table class="slds-table slds-table_bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Closed Date</th>
+                <th>Priority</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <template for:each={CaseList} for:item="Case">
+                <tr key={Case.Id}>
+                    <td>{Case.CaseNumber}</td>
+                    <td>{Case.Subject}</td>
+                    <td>{Case.ClosedDate}</td>
+                    <td>{Case.Priority}</td>
+                    <td>{Case.Status}</td>
+                </tr>
+            </template>
+        </tbody>
+    </table>
+    </lightning-card>
+</template>

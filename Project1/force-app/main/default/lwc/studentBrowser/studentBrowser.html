@@ -1,0 +1,14 @@
+<template>
+    Student Browser
+    <div class="slds-box">
+        <c-student-filter onaccountselect={handleselect}></c-student-filter>
+    </div>
+    <lightning-tabset variant="scoped">
+        <lightning-tab label="Gallery">
+            <c-student-tiles onstudentclick={handlestudentclick} student-list={studentList}></c-student-tiles>
+        </lightning-tab>
+        <lightning-tab label="Grid">
+            <c-student-table onstudentclick={handlestudentclick} student-list={studentList}></c-student-table>
+        </lightning-tab>
+    </lightning-tabset>
+</template>

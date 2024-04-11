@@ -1,0 +1,19 @@
+<template>
+
+    <!--Taking user input-->
+    <div class="slds-box">
+    <lightning-input label="First number" onchange={handleFirstNumberChange} value={firstNumber}></lightning-input>
+    <br/>
+    <lightning-input label="Second number" onchange={handleSecondNumberChange} value={secondNumber}></lightning-input>
+</div>
+<div class="slds-box">
+    Result is  {result}
+</div>
+<div class="slds-box">
+    <lightning-button label="Addition" onclick={add}></lightning-button>
+    <lightning-button label="Subtraction" onclick={sub}></lightning-button>
+    <lightning-button label="Multiplication" onclick={mult}></lightning-button>
+    <lightning-button label="division" onclick={div}></lightning-button>
+</div>
+
+</template>

@@ -1,0 +1,26 @@
+<template>
+    <div class="slds-box">
+        <lightning-vertical-navigation onselect={handleSelect}>
+            <lightning-vertical-navigation-section label="Browse">
+                <lightning-vertical-navigation-item-icon label="Student Browser" 
+                                                         name="students"
+                                                         icon-name="standard:groups">
+                </lightning-vertical-navigation-item-icon>
+                <lightning-vertical-navigation-item-icon label="Simple Calculator"
+                                                         name="calc"
+                                                        icon-name="standard:apps">
+                </lightning-vertical-navigation-item-icon>
+            </lightning-vertical-navigation-section>
+            <lightning-vertical-navigation-section label="Opportunities World">
+                <lightning-vertical-navigation-item-icon label="Opportunity Imperative"
+                                                         name="oppv3"
+                                                         icon-name="standard:opportunity">
+                </lightning-vertical-navigation-item-icon>
+                <lightning-vertical-navigation-item-icon label="Opportunity LDT" 
+                                                     name="oppv4"
+                                                     icon-name="standard:opportunity">
+                </lightning-vertical-navigation-item-icon>
+            </lightning-vertical-navigation-section>
+        </lightning-vertical-navigation>
+    </div>
+</template>
