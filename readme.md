@@ -60,5 +60,3 @@ Open your Salesforce org in the browser:
 
 ```bash
 sfdx force:org:open
-```
-```
