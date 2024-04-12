@@ -23,10 +23,42 @@ This repository contains a Salesforce development project, which includes Apex c
 
 - **config/**: Configuration files for the Salesforce DX project.
   - `project-scratch-def.json`: Defines the shape of the scratch org.
+Here's the README.md content formatted with proper Markdown to display the installation and setup instructions clearly on GitHub:
+
+```markdown
+# Salesforce Development Project
 
 ## Setup and Installation
 
-1. **Clone the repository:**
+### Install dependencies
 
-   ```bash
-   git clone [repository-url]
+Run the following command to install the necessary dependencies:
+
+```bash
+npm install
+```
+
+### Authorize your Salesforce org
+
+Authorize your Salesforce development org with this command:
+
+```bash
+sfdx force:auth:web:login -s -a my-dev-org
+```
+
+### Deploy the project to your org
+
+Deploy the source code to your Salesforce org using:
+
+```bash
+sfdx force:source:push
+```
+
+### Open your org
+
+Open your Salesforce org in the browser:
+
+```bash
+sfdx force:org:open
+```
+```
